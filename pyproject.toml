@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=64.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "umonitor"
+version = "1.0.0"
+description = "Real-time CPU & GPU resource monitor for Ubuntu — terminal TUI with htop-like feel."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.8"
+dependencies = [
+    "psutil>=5.9.0",
+    "nvidia-ml-py>=12.0.0",
+    "rich>=13.0.0",
+]
+
+[project.scripts]
+umonitor = "umonitor.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

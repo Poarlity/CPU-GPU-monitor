@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=UMonitor
+Comment=Real-time CPU & GPU resource monitor
+Icon=utilities-system-monitor
+Exec=bash -c "cd '$(dirname "%k")' && ./umonitor.sh"
+Path=
+Terminal=true
+Categories=System;Monitor;
+Keywords=monitor;cpu;gpu;system;resource;htop;
+StartupNotify=false
